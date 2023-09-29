@@ -1,27 +1,17 @@
-#media ponderada de 3 provas
-peso1 = 1
-peso2 = 2
+#faça um programa para determinar o número de digitos de um numero inteiro positivo informado
+while True:
+        escolha = int(input('1 - Iniciar programa :\n'
+                            '2 - finalizar '))
+        
+        if escolha == 1 :
+            num = int(input('Digite um número inteiro positivo: '))
+            if num <= 0 :
+                  print('O número deve ser maior que zero')
+                  continue
+            print(f'O número {num} tem {len(str(num))} digitos')
+            continue
 
-nota1 = float(input(f'Digite a 1 nota: '))
-totalnota1 = nota1*peso1
-
-nota2 = float(input(f'Digite a 2 nota: '))
-
-totalnota2 = nota2*peso1
-
-nota3 = float(input(f'Digite a 3 nota: '))
-
-totalnota3 = nota3*peso2
-
-media = (totalnota1 + totalnota2 + totalnota3)/4
-
-print(f'Sua média foi de {media:.0f} e o aluno está ', end= "")
-
-if media >= 60:
-    print(f'Aprovado!')
-
-else:
-    print(f'Reprovado!')
-
+        else:
+              break
 
 
